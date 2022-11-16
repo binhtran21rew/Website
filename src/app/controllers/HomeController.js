@@ -1,5 +1,5 @@
-class HomeController{
-    show(req, res){
+class HomeController {
+    show(req, res) {
         res.render('home');
     }
 }
