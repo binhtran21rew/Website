@@ -6,9 +6,13 @@ const {engine} = require('express-handlebars');
 const port = 3000;
 
 
-app.get('/', (req, res) => {
-    res.render('home')
-})
+const route = require('./routes');
+route(app);
+
+
+// app.get('/', (req, res) => {
+//     res.render('home')
+// })
 
 // app use 
 app.use(morgan('combined'));
