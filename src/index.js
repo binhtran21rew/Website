@@ -2,8 +2,10 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const morgan = require('morgan');
-const { engine } = require('express-handlebars');
-const port = 3000;
+
+
+        const { engine } = require('express-handlebars');
+        const port = 3000;
 
 const route = require('./routes');
 route(app);
